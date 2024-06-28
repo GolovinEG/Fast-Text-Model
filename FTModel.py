@@ -222,6 +222,6 @@ def main():
     #Outputs score and graphs
     print(f"Score = {classifier.score(X_test, y_test):.3f}")
     output_graphs_generic(classifier, X_train, X_test, y_test, labels, feature_names)
-    output_graphs_binary_selection(classifier, X_test, y_test, "REAL")
+    output_graphs_binary_selection(classifier, X_test, y_test, labels)
 
 if __name__ == "__main__": main()
