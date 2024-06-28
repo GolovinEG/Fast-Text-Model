@@ -4,7 +4,7 @@ def remove_dates(text: str):
     months = ("january", "february", "march", "april", "may", "june",
               "july", "august", "september", "october", "november", "december")
     for month in months:
-        text = text.replace(month, "")
+        text = text.lower().replace(month, "")
     start = 0
     year_starts = ("19", "20") #Assumes an year starting with 19 or 20
     for year_start in year_starts:
