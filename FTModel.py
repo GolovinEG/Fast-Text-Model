@@ -120,7 +120,7 @@ def output_graphs_generic(classifier, X_train: csc_matrix, X_test: csc_matrix, y
     yaxis_dict = {"title": {"text": "True label", "font": font_dict}, "tickfont_size": 16}
     title_dict = {"text": "Confusion matrix", "font": font_dict}
     fig.update({"layout": {"title": title_dict, "xaxis": xaxis_dict, "yaxis": yaxis_dict}})
-    #fig.show()
+    fig.show()
 
     average_feature_effects = classifier.coef_ * np.asarray(X_train.mean(axis = 0)).ravel()
 
